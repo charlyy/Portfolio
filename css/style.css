@@ -1,4 +1,66 @@
 
+/* Navigation Bar */
+
+.navbar {
+    position: fixed;
+    margin-top: 20px;
+    margin: 0 auto;
+    z-index: 2000;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.contact_imgs {
+  height: 100px;
+  width: 100px;
+  border: 0px;
+  margin: 0 auto;
+}
+
+/* Cotact Modal */
+
+#contact_container table tr th a {
+    color: white;
+}
+
+#contact_navlink, #home_navlink, #about_navlink {
+    margin: 10px 0 0 20px;
+}
+
+#contact_modal {
+    background: none;
+    border: none;
+}
+
+#contact_modal table {
+    margin: 0 auto;
+    border: none;
+    background: none;
+}
+
+#contact_modal table tr th {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#contact_modal table tr {
+    background: none;
+}
+
+#contact_modal p {
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center
+}
+
+/* Main */
+
 html, 
 button,
 input,
