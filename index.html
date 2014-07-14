@@ -2,13 +2,14 @@
 <html lang="en">
 	<head>
 	 	<meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	    <title>Charly Yoon</title>
         <link rel="stylesheet" href="css/hover.css" />
 	    <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/foundation.css" />
-	   	<link rel="stylesheet" href="css/style.css" />
 	   	<script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
 		<style type="text/css">
 			h1 {
 				height: 100%;
@@ -31,10 +32,10 @@
 
     <main>
         <section id="slide-1" class="homeSlide">
-        	<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+        	<div id="top_header" class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
 	        	<div class="hsContainer">
 		    		<div class="hsContent" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 h2">
-			    		<h2 id="top_header">Charly Yoon</h2>
+			    		<h2>Charly Yoon</h2>
 			    		<p>
                             Junior Full-Stack <br /> 
                             Web Developer
@@ -102,10 +103,10 @@
                         <div id="navbar" class="row">
                             <ul>
                                 <li class="navlinks large-6 columns">  
-                                    <a class="sink large round button" id="about_navlink" href="#top_header">Back To Top</a> 
+                                    <a class="sink large round button" id="top_navlink" href="#top_header" data-menu-top="-1500">Back To Top</a> 
                                 </li>    
                                 <li class="navlinks large-6 columns">  
-                                    <a class="sink large round button success" href="#" data-reveal-id="contact_modal" id="contact_navlink">Contact</a>
+                                    <a class="sink large round button success" href="" data-reveal-id="contact_modal" id="contact_navlink">Contact</a>
                                 </li>
                             </ul>
                         </div>  
@@ -130,10 +131,6 @@
                               <a class="close-reveal-modal float">close</a>
                             </div>
                         </div>      
-
-
-
-
 		    		</div>
 		    	</div>
 	    	</div>
@@ -144,6 +141,7 @@
 	<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.js"><\/script>')</script>
 	<script src="js/imagesloaded.js"></script>
 	<script src="js/skrollr.js"></script>
+    <script src="js/skrollr.menu.js"></script>
     <script src="js/_main.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
