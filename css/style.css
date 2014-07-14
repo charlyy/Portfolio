@@ -1,23 +1,25 @@
 
 /* Navigation Bar */
 
-.navbar {
-    position: fixed;
-    margin-top: 20px;
+#navbar {
     margin: 0 auto;
-    z-index: 2000;
+    z-index: 200;
     text-align: center;
 }
 
-.navbar ul {
+#navbar ul {
     list-style-type: none;
 }
 
+#navbar a {
+    text-decoration: none;
+}
+
 .contact_imgs {
-  height: 100px;
-  width: 100px;
-  border: 0px;
-  margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    border: 0px;
+    margin: 0 auto;
 }
 
 /* Cotact Modal */
@@ -59,9 +61,7 @@
     text-align: center
 }
 
-/* Main */
-
-html, 
+html,
 button,
 input,
 select,
@@ -90,7 +90,9 @@ body {
     text-shadow: none;
 }
 
-/* A better looking default horizontal rule */
+/*
+ * A better looking default horizontal rule
+ */
 
 hr {
     display: block;
@@ -101,13 +103,17 @@ hr {
     padding: 0;
 }
 
-/* Remove the gap between images and the bottom of their containers: h5bp.com/i/440 */
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
 
 img {
     vertical-align: middle;
 }
 
-/* Remove default fieldset styles. */
+/*
+ * Remove default fieldset styles.
+ */
 
 fieldset {
     border: 0;
@@ -115,34 +121,49 @@ fieldset {
     padding: 0;
 }
 
-/* Allow only vertical resizing of textareas. */
+/*
+ * Allow only vertical resizing of textareas.
+ */
 
 textarea {
     resize: vertical;
 }
 
 /* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
    Parallax Scroll
    ========================================================================== */
-body, 
-html {
+body, html {
     height: 100%;
     min-height: 100%;
     background-color: white;
 }
-
+body {
+    
+}
+.no-js {
+    padding-top: 106px;
+}
 h2 {
     margin-top: 0;
 }
 .loading {
     background: url('../imgs/loading.gif') no-repeat center center;
 }
-
 section {
     min-width: 960px;
     opacity: 0;
 }
-
 .loaded section,
 .no-js section {
     opacity: 1;
@@ -150,7 +171,6 @@ section {
     -moz-transition: opacity 300ms ease-out;
     transition: opacity 300ms ease-out;
 }
-
 main {
     overflow-x: hidden;
 }
@@ -163,10 +183,9 @@ main {
     height: 100%;
     width: 100%;
 }
-
 /* Slide 1 */
 #slide-1 .bcg {
-    background-image: url('../imgs/simple_wallpaper.jpg');
+    background-image:url('../imgs/simple_wallpaper.jpg');
 }
 
 /* Slide 2 */
@@ -177,11 +196,10 @@ main {
     text-align: center;
 }
 
-/* Slide 3 */
+/* Slide 3 */                       
 #slide-3 .bcg {
-    background-image: url('../imgs/santamonica.jpg')
+    background-image:url('../imgs/santamonica.jpg');
 }
-
 
 /* Slide 4 */
 .curtainContainer {
@@ -189,6 +207,7 @@ main {
     height: 100%; 
     position: relative;
 }
+
 .curtainContainer .curtain {
     width: 300%; 
     height: 1px; 
@@ -196,7 +215,7 @@ main {
     position: absolute; 
     top: 25%; 
     left: 0; 
-    opacity: 0;
+    opacity: 0
 }
 .curtainContainer .copy {
     position: absolute; 
@@ -207,7 +226,7 @@ main {
 }
 
 #slide-4 .bcg {
-    background-image: url('../imgs/tech_wallpaper2.jpg');
+    background-image:url('../imgs/cloud_wallpaper.png');
 }
 
 /* Slide 5 */
@@ -215,11 +234,12 @@ main {
     position: relative;
 }
 #slide-5 .bcg {
-    background-image: url('../imgs/tech_wallpaper.jpg');
+    background-image:url('../imgs/tech_wallpaper.jpg');
 }
 #slide-5 .bcg2 {
-    background-image: url('../imgs/cloud_wallpaper.png'); 
-    position: fixed; 
+    background-image:url('../imgs/tech_wallpaper2.jpg'); 
+    position: 
+    fixed; 
     bottom: 0; 
     left: 0; 
     opacity: 0; 
@@ -252,10 +272,11 @@ main {
     vertical-align: middle;
     color: #ebebeb;
     padding: 0 8%;
-    text-align: center;
+    text-align: center
 }
 
-.hsContent h2, .copy h2 {
+.hsContent h2,
+.copy h2 {
     color: #ffffff;
     font-size: 45px;
     line-height: 48px;
@@ -274,7 +295,6 @@ main {
     background-color: rgba(0,0,0,0.75);
     padding: 3px 10px;
 }
-
 
 /* ==========================================================================
    Helper classes
