@@ -47,12 +47,12 @@
 		    easing: 'sqrt',
 
 		    //Multiply your data-[offset] values so they match those set in skrollr.init
-		    scale: 2,
+		    scale: 0.001,
 
 		    //How long the animation should take in ms.
 		    duration: function(currentTop, targetTop) {
 		        //By default, the duration is hardcoded at 500ms.
-		        return 1500;
+		        return 1700;
 
 		        //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
 		        //return Math.abs(currentTop - targetTop) * 10;

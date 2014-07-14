@@ -123,17 +123,27 @@ main {
     background-image:url('../imgs/simple_wallpaper.jpg');
 }
 
+#fullname {
+    color: black;
+    font-size: 5em;
+}
+
 /* Slide 2 */
 #slide-2 .bcg {
     background: none; 
     background-color: #010101; 
-    height: 310px; 
+    height: 355px; 
     text-align: center;
 }
 
 /* Slide 3 */                       
 #slide-3 .bcg {
     background-image:url('../imgs/santamonica.jpg');
+}
+
+#career_header {
+    color: white;
+    text-align: center;
 }
 
 /* Slide 4 */
@@ -284,10 +294,16 @@ main {
     text-decoration: underline;
 }
 .bgBlack {
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.80);
+    border-radius: 15px;
     padding: 3px 10px;
 }
 
+.bgBlack2 {
+    color: white;
+    background-color: rgba(0,0,0,0.35);
+    border-radius: 5px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
