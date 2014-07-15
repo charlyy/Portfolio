@@ -120,8 +120,10 @@ main {
 }
 /* Slide 1 */
 #slide-1 .bcg {
-    background-image:url('../imgs/simple_wallpaper.jpg');
+    background-image:url('../imgs/charlywallpaper.jpg');
 }
+
+
 
 #fullname {
     color: black;
@@ -171,7 +173,7 @@ main {
 }
 
 #slide-4 .bcg {
-    background-image:url('../imgs/cloud_wallpaper.png');
+    background-image:url('../imgs/tech_wallpaper.jpg');
 }
 
 /* Slide 5 */
@@ -179,10 +181,10 @@ main {
     position: relative;
 }
 #slide-5 .bcg {
-    background-image:url('../imgs/tech_wallpaper.jpg');
+    background-image:url('../imgs/cloud_wallpaper.png');
 }
 #slide-5 .bcg2 {
-    background-image:url('../imgs/tech_wallpaper2.jpg'); 
+    background-image:url('../imgs/simple_wallpaper.jpg'); 
     position: fixed; 
     bottom: 0; 
     left: 0; 
@@ -190,8 +192,8 @@ main {
     z-index: 1;
 }
 #slide-5 .bcg3 {
-    background: none; 
-    background-color: #010101; 
+    background-image:url('../imgs/charlywallpaper.jpg');
+    background-color: white; 
     z-index: 2;  
     position: fixed; 
     bottom: 0; 
@@ -200,18 +202,18 @@ main {
     z-index: 2;
 }
 
-/* Navigation Bar */
+/* Footer */
 
-#navbar {
+#footer {
     margin: 0 auto;
     text-align: center;
 }
 
-#navbar ul {
+#footer ul {
     list-style-type: none;
 }
 
-#navbar a {
+#footer a {
     text-decoration: none;
 }
 
@@ -301,7 +303,7 @@ main {
 
 .bgBlack2 {
     color: white;
-    background-color: rgba(0,0,0,0.35);
+    background-color: rgba(0,0,0,0.45);
     border-radius: 5px;
 }
 /* ==========================================================================
