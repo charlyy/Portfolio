@@ -80,25 +80,28 @@ textarea {
 /* ==========================================================================
    Parallax Scroll
    ========================================================================== */
+
+
+
 body, html {
     height: 100%;
     min-height: 100%;
     background-color: white;
 }
-body {
-    
-}
 
 h2 {
     margin-top: 0;
 }
+
 .loading {
     background: url('../imgs/loading.gif') no-repeat center center;
 }
+
 section {
     min-width: 960px;
     opacity: 0;
 }
+
 .loaded section,
 .no-js section {
     opacity: 1;
@@ -106,6 +109,7 @@ section {
     -moz-transition: opacity 300ms ease-out;
     transition: opacity 300ms ease-out;
 }
+
 main {
     overflow-x: hidden;
 }
@@ -118,12 +122,22 @@ main {
     height: 100%;
     width: 100%;
 }
+
 /* Slide 1 */
+
 #slide-1 .bcg {
     background-image:url('../imgs/charlywallpaper.jpg');
 }
 
+#first_slide {
+    padding: 130px 0;
+    border-radius: 25px;
+    background: rgba(0,0,0,.55);
+}
 
+#slide-1 h2, #slide-1 h3 {
+    color: white;
+}
 
 #fullname {
     color: black;
@@ -131,6 +145,7 @@ main {
 }
 
 /* Slide 2 */
+
 #slide-2 .bcg {
     background: none; 
     background-color: #010101; 
@@ -138,17 +153,22 @@ main {
     text-align: center;
 }
 
-/* Slide 3 */                       
+/* Slide 3 */ 
+
 #slide-3 .bcg {
     background-image:url('../imgs/santamonica.jpg');
 }
 
-#career_header {
+#slide-3 h3, #slide-3 h4 {
     color: white;
-    text-align: center;
+}
+
+#third_slide {
+    background: rgba(0,0,0,.45);
 }
 
 /* Slide 4 */
+
 .curtainContainer {
     width: 100%; 
     height: 100%; 
@@ -177,6 +197,11 @@ main {
 }
 
 /* Slide 5 */
+
+#fifth_slide1 {
+    text-align: center;
+}
+
 #slide-5 {
     position: relative;
 }
@@ -201,64 +226,6 @@ main {
     opacity: 0; 
     z-index: 2;
 }
-
-/* Footer */
-
-#footer {
-    margin: 0 auto;
-    text-align: center;
-}
-
-#footer ul {
-    list-style-type: none;
-}
-
-#footer a {
-    text-decoration: none;
-}
-
-.contact_imgs {
-    height: 100px;
-    width: 100px;
-    border: 0px;
-    margin: 0 auto;
-}
-
-/* Cotact Modal */
-
-#contact_container table tr th a {
-    color: white;
-}
-
-#contact_modal {
-    background: none;
-    border: none;
-}
-
-#contact_modal table {
-    margin: 0 auto;
-    border: none;
-    background: none;
-}
-
-#contact_modal table tr th {
-    font-size: 1.4em;
-    font-family: sans-serif;
-    text-align: center;
-    color: white;
-}
-
-#contact_modal table tr {
-    background: none;
-}
-
-#contact_modal p {
-    font-family: sans-serif;
-    color: white;
-    font-size: 1.4em;
-    text-align: center
-}
-
 
 .hsContainer {
     display: table;
@@ -295,17 +262,7 @@ main {
     color: #b2b2b2;
     text-decoration: underline;
 }
-.bgBlack {
-    background-color: rgba(0,0,0,0.80);
-    border-radius: 15px;
-    padding: 3px 10px;
-}
 
-.bgBlack2 {
-    color: white;
-    background-color: rgba(0,0,0,0.45);
-    border-radius: 5px;
-}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -495,3 +452,66 @@ main {
         page-break-after: avoid;
     }
 }
+
+
+/* Navbar */
+
+#navbar {
+    position: fixed;
+    margin: 0 auto;
+    margin-top: 10px;
+    z-index: 2000;
+    text-align: center;
+}
+
+#navbar ul {
+    list-style-type: none;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+/* Cotact Modal */
+
+.contact_imgs {
+    height: 100px;
+    width: 100px;
+    border: 0px;
+    margin: 0 auto;
+}
+
+#contact_container table tr th a {
+    color: white;
+}
+
+#contact_modal {
+    background: none;
+    border: none;
+}
+
+#contact_modal table {
+    margin: 0 auto;
+    border: none;
+    background: none;
+}
+
+#contact_modal table tr th {
+    font-size: 1.4em;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#contact_modal table tr {
+    background: none;
+}
+
+#contact_modal p {
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.4em;
+    text-align: center
+}
+
+

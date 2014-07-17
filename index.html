@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 	<head>
 	 	<meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="css/hover.css" />
 	    <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/foundation.css" />
-	   	<script src="js/vendor/modernizr-2.7.1.min.js"></script>
         <link rel="stylesheet" href="css/style.css" />
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
 		<style type="text/css">
 			h1 {
 				height: 100%;
@@ -30,20 +30,65 @@
 	</head>
     <body class="loading">
 
+
+    <div class="nav_bar">  
+                <a class="sink" href="#fullname">Scroll Top</a> 
+            
+             
+                <a class="sink" href="#bio">Bio</a> 
+           
+           
+                <a class="sink" href="#ga">GA</a> 
+           
+            
+                <a class="sink" href="#skills">Skills</a> 
+            
+             
+                <a class="sink" href="#projects">Projects</a> 
+                           
+              
+                <a class="sink" href="" data-reveal-id="contact_modal" id="contact_navlink">Contact</a>
+            
+        </ul> 
+    </div>
+    
+    <!-- Contact Modal -->
+    <div id="contact_modal" class="reveal-modal" data-reveal> 
+        <div id="contact_container">
+          <table>
+              <tr>
+                  <th><a class="float" href="https://www.facebook.com/charlygoon" target="blank">Facebook</a></th>
+                  <th><a class="float" href="https://www.linkedin.com/profile/view?id=205740037&trk=nav_responsive_tab_profile" target="blank">LinkedIn</a></th>
+                  <th><a class="float" href="https://github.com/charlyy" target="blank">Github</a></th>
+              </tr>
+              <tr>
+                  <td><a class="float" href="https://www.facebook.com/charlygoon" target="blank"><img src="imgs/facebook.png" class="contact_imgs"/></a></td>
+                  <td><a class="float" href="https://www.linkedin.com/profile/view?id=205740037&trk=nav_responsive_tab_profile" target="blank"><img src="imgs/linkedin.png" class="contact_imgs"/></a></td>
+                  <td><a class="float" href="https://github.com/charlyy" target="blank"><img src="imgs/github.png" class="contact_imgs"/></a></td>
+              </tr>
+          </table>
+                  <br/>
+          <p><strong>Email:</strong> cyoon90@yahoo.com</p>
+          <a class="close-reveal-modal float">close</a>
+        </div>
+    </div> 
+
         <main>
             <section id="slide-1" class="homeSlide">
             	<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
     	        	<div class="hsContainer">
     		    		<div class="hsContent" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 h3">
-    			    		<h2 id="fullname">
+    			    		<div id="first_slide">
+                            <h2 id="fullname">
                                 Charly Yoon<br /><br />
                             </h2>
                             <h3>    
-                                Junior Full-Stack Web Developer<br /><br />
+                                Aspiring Full-Stack Web Developer<br /><br />
                         
                                 Currently looking for a full-time position for either<br /> 
                                 Full-Stack or Front-End
                             </h3>
+                            </div>
     		    		</div>
     	        	</div>
             	</div>
@@ -53,10 +98,11 @@
     	    	<div class="bcg" data-0="background-color:rgb(1,127,159);" data-top="background-color:(0,0,0);"  data-anchor-target="#slide-2">
     		    	<div class="hsContainer">
     		    		<div class="hsContent">
-    			    		<h2 data-center="opacity: 1" data--1500-bottom="opacity: 0;" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 p">Short & Sweet Bio</h2>
+    			    		<h2 id="bio" data-center="opacity: 1" data--1500-bottom="opacity: 0;" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 p">{{ Bio }}</h2>
     			    		<p data-center="opacity: 1" data--1500-bottom="opacity: 0;" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 p">
                                 I am 24 years old from Oxnard, CA. <br /> 
-                                In 2013, I graduated from UCSB with a B.A. in Cultural Anthropology. After graduating, I made a decision to pursue a career in Web Development/Software Engineering. <br />
+                                In 2013, I graduated from UCSB with a B.A. in Cultural Anthropology. <br /> 
+                                After graduating, I made a decision to pursue a career in Web Development/Software Engineering. <br />
                                 I began trying to teach myself HTML, CSS, Javascript, jQuery, and a little bit of Ruby to the best of my abilities up until April 2014... <br /> 
     		    		</div>
     	        	</div>
@@ -67,13 +113,18 @@
     			<div class="bcg" data-center="background-position: 0px 50%;" data-bottom-top="background-position: 0px 40%;" data-top-bottom="background-position: -40px 50%;" data-anchor-target="#slide-3">
     		    	<div class="hsContainer">
     		    		<div class="hsContent">
-    		    			<div class="plaxEl" data-106-top="opacity: 0" data--30p-top="opacity: 1;" data--60p-top="opacity: 0;" data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;"  data-anchor-target="#slide-3">
-    				    		<h2><span class="bgBlack">Through April 2014 - June 2014</span></h2>
-    				    		<p><span class="bgBlack2">I was selected to attened <strong>General Assembly's</strong> <br />
-                                Web Development Immersive program <br/> 
-                                in Santa Monica, CA.<br />
-                                After completing the 12-week immersive program, <br /> 
-                                I acquired many skills in both Front-End Back-End development.<span class="bgBlack2"></p> 
+    		    			<!-- <div class="plaxEl" data-106-top="opacity: 0;" data--30p-top="opacity: 1;" data--60p-top="opacity: 0;" data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;"  data-anchor-target="#slide-3"> -->
+                                <div class="third_slide">
+        				    		<h2 id="ga">
+                                        General Assembly <br />
+                                        Web Development Immersive Program
+                                    </h2>
+        				    		<h4> 
+                                        Starting from April 2014 to the end of June 2014, I was selected to attend General Assembly's <br />
+                                        Web Development Immersive program in Santa Monica, CA.<br /> 
+                                        This 12-week program helped me acquire skills in both Front-End & Back-End development.
+                                    </h4> 
+                                </div>
     			    		</div>
     		    		</div>
     				</div>
@@ -86,7 +137,7 @@
     		
     					<div class="curtain" data-bottom-top="opacity: 0" data-106-top="height: 1%; opacity: 0; top: -10%;" data-center="height: 100%; opacity: 0.5; top: 0%;" data-anchor-target="#slide-4"></div>
     					<div class="copy" data-bottom-top="opacity: 0" data--100-bottom="opacity: 0" data--280-bottom="opacity: 1;" data-280-top="opacity: 1;" data-106-top="opacity: 0;" data-anchor-target="#slide-4 .copy">
-    						<h2>Curtain effect while you scroll</h2>
+    						<h2 id="skills">Skills</h2>
     					</div>
     					
     				</div>
@@ -96,50 +147,29 @@
     	    <section id="slide-5" class="homeSlide homeSlideTall2">
     	    	<div class="bcg">
     		    	&nbsp;
+                    <div id="fifth_slide1">
+                           
+                    </div>
     	    	</div>
     	    	<div class="bcg bcg2" data-bottom-top="opacity: 0;" data--33p-top="opacity: 0;" data--66p-top="opacity: 1;" data-anchor-target="#slide-5">
     		    	<div class="hsContainer">
     			    	<div class="hsContent" data-bottom-top="opacity: 0;" data-center="opacity: 1" data-anchor-target="#slide-5">
-    			    		<h2>Fixed element fading in and out</h2>
-    			    		<p>Showcase your beautiful images before blurring the scene and fading in your headline.</p>
+    			    		<h2 id="projects">Projects</h2>
+                            <ul class="row">
+                                <li class="small small-4 large-4 columns"><a href="https://elfuego.firebaseapp.com">Tic Tac Toe</a></li>
+                                <li class="small small-4 large-4 columns"><a href="https://parkpicker.herokuapp.com">Park Picker</a></li>
+                                <li class="small small-4 large-4 columns"><a href="https://plandora-travel.herokuapp.com">Plandora</a></li>
+                             </ul>  
+                             <ul class="row"> 
+                                <li class="small small-6 large-6 columns"><a href="">WEsource</a></li>
+                                <li class="small small-6 large-6 columns"><a href="">Pic Point</a></li>
+                            </ul>
     		    		</div>
     		    	</div>
     	    	</div>
     	    	<div class="bcg bcg3" data-300-bottom="opacity: 0;" data-100-bottom="opacity: 1;" data-anchor-target="#slide-5">
     		    	<div class="hsContainer">
-    			    	<div class="hsContent" data-100-bottom="opacity: 0;" data-bottom="opacity: 1;" data-anchor-target="#slide-5">
-    			 	
-                           <!-- footer -->
-                            <div id="footer" class="row">
-                                <ul>
-                                    <li class="navlinks large-6 columns">  
-                                        <a class="sink" id="top_navlink" href="#fullname">Back To Top</a> 
-                                    </li>    
-                                    <li class="navlinks large-6 columns">  
-                                        <a class="sink" href="" data-reveal-id="contact_modal" id="contact_navlink">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>  
-                            <!-- Contact Modal -->
-                            <div id="contact_modal" class="reveal-modal" data-reveal> 
-                                <div id="contact_container">
-                                  <table>
-                                      <tr>
-                                          <th><a class="float" href="https://www.facebook.com/charlygoon" target="blank">Facebook</a></th>
-                                          <th><a class="float" href="https://www.linkedin.com/profile/view?id=205740037&trk=nav_responsive_tab_profile" target="blank">LinkedIn</a></th>
-                                          <th><a class="float" href="https://github.com/charlyy" target="blank">Github</a></th>
-                                      </tr>
-                                      <tr>
-                                          <td><a class="float" href="https://www.facebook.com/charlygoon" target="blank"><img src="imgs/facebook.png" class="contact_imgs"/></a></td>
-                                          <td><a class="float" href="https://www.linkedin.com/profile/view?id=205740037&trk=nav_responsive_tab_profile" target="blank"><img src="imgs/linkedin.png" class="contact_imgs"/></a></td>
-                                          <td><a class="float" href="https://github.com/charlyy" target="blank"><img src="imgs/github.png" class="contact_imgs"/></a></td>
-                                      </tr>
-                                  </table>
-                                          <br/>
-                                  <p><strong>Email:</strong> cyoon90@yahoo.com</p>
-                                  <a class="close-reveal-modal float">close</a>
-                                </div>
-                            </div>      
+    			    	<div class="hsContent" data-100-bottom="opacity: 0;" data-bottom="opacity: 1;" data-anchor-target="#slide-5">      
     		    		</div>
     		    	</div>
     	    	</div> <!-- end of bcg3 -->
